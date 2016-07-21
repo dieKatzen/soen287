@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="catAdoptionStyle.css">
+<title>Catastrophe</title>
+<script type="text/javascript" src="adoption.js">
+</script>
+</head>
+<body>
+	<div id="topBar">
+		<h1><p id="headerText">Cat Homes
+			<a href="catAdoption.html">
+			<img alt="Cat Homes" src="cat_logo.jpg" id="headerImage">
+		</a></p></h1>
+	</div>
+	<div id="menuBar">
+			<ul id="menu">
+			  <li><a href="catAdoption.html">Home Page</a></li>
+			  <li><a href="browse.html">Browse Available Pets</a></li>
+			  <li><a href="find.html" class="active">Find a Pet</a></li>
+			  <li><a href="dogCare.html">Dog Care</a></li>
+			  <li><a href="catCare.html">Cat Care</a></li>
+			  <li><a href="giveAway.html">Have a pet to give away?</a></li>
+			  <li><a href="contactUs.html">Contact Us</a></li>
+			</ul>
+	</div>
+	<div id="content">
+		<form>
+			<fieldset>
+				<legend>Find a Pet</legend>
+					<label>Feline or Canine:</label>
+					<label><input type="radio" name="catSelect"
+					value="catSelect" id="selectCat"> Cat Please!
+					</label>
+					<label><input type="radio" name="dogSelect"
+					value="dogSelect" id="selectDog"/> Dog Please!
+					</label><br>
+
+					<label> Select Breed
+						<select name="opinion">
+							<option value = "placeHolder"> place holder</option>
+						</select>
+					</label><br>
+					
+					
+					<label> Preferred Age
+						<select name="opinion">
+							<option value = "1"> 1</option>
+							<option value = "2" > 2</option>
+							<option value = "3" > 3</option>
+							<option value = "4" > 4</option>
+							<option value = "5" > 5</option>
+							<option value = "6" > 6</option>
+							<option value = "7" > 7</option>
+							<option value = "7" > 8</option>
+							<option value = "7" > 9</option>
+							<option value = "7" > 10</option>
+							<option value = "10+" > 10+</option>
+						</select></br>
+						
+						<label>Select your specificities</label><br>
+						<label><input type="checkbox" name="specificities"
+						value="children" id="spec1"/> I have children</label>
+						<label><input type="checkbox" name="specificities"
+						value="otherCats" id="spec2"/> I have other cats</label>
+						<label><input type="checkbox" name="specificities"
+						value="otherDogs" id="spec3"/> I have other dogs</label>
+						<label><input type="checkbox" name="specificities"
+						value="allergies" id="spec4"/> I have allergies</label><br>
+						<label><input type="checkbox" name="specificities"
+						value="indoor" id="spec5"/> My pet will spend most of it's time indoors</label></br>
+						<label><input type="checkbox" name="specificities"
+						value="outdoor" id="spec6"/> My pet will spend most of it's time outdoors</label>
+						<br>
+					</label><br>
+			</fieldset>
+		</form>
+		<p>Submit my preferences</p>
+		<form>
+			<input type="button" value="submit" onclick="checkFields()">
+			<input type="reset" value="reset" onclick="reset">
+		</form>
+	</div>
+	<div id="Footer">
+		<pre id="footerText">
+		Disclaimer: No information that is received by the site shall be 
+		shared or given to any third party, unless the user has agreed to 
+		and has been notify of the process.
+		</pre>
+	</div>
+</body>
+</html>
